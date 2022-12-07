@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20221207 21:40:03.098" rpa="true" schemaversion="3">
+<suite id="s1" name="Tasks" source="c:\Users\nicoc\Documents\GitHub\RoboCorpsEjemplos\examplerobot\tasks.robot">
+<test id="s1-t1" name="Inserte los datos de ventas de la semana y expórtelos como PDF." line="6">
+<kw name="Open the intranet website">
+<kw name="Open Available Browser" library="RPA.Browser.Selenium">
+<arg>https://robotsparebinindustries.com/</arg>
+<doc>Attempts to open a browser on the user's device from a set of
+supported browsers. Automatically downloads a corresponding webdriver
+if none is already installed.</doc>
+<msg timestamp="20221207 21:40:04.077" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20221207 21:40:05.167" level="INFO">Created Chrome browser with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox</msg>
+<msg timestamp="20221207 21:40:05.168" level="INFO" html="true">&lt;p&gt;Attempted combinations:&lt;/p&gt;&lt;div class="doc"&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Browser&lt;/th&gt;&lt;th&gt;Download&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
+<msg timestamp="20221207 21:40:05.168" level="INFO">Opening url 'https://robotsparebinindustries.com/'</msg>
+<status status="PASS" starttime="20221207 21:40:04.075" endtime="20221207 21:40:05.567"/>
+</kw>
+<status status="PASS" starttime="20221207 21:40:04.073" endtime="20221207 21:40:05.568"/>
+</kw>
+<kw name="Log in">
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>id:username</arg>
+<arg>maria</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221207 21:40:05.571" level="INFO">Typing text 'maria' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20221207 21:40:05.570" endtime="20221207 21:40:05.623"/>
+</kw>
+<kw name="Input Password" library="RPA.Browser.Selenium">
+<arg>name:password</arg>
+<arg>thoushallnotpass</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221207 21:40:05.624" level="INFO">Typing password into text field 'name:password'.</msg>
+<msg timestamp="20221207 21:40:05.649" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221207 21:40:05.677" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221207 21:40:05.623" endtime="20221207 21:40:05.677"/>
+</kw>
+<kw name="Submit Form" library="RPA.Browser.Selenium">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20221207 21:40:05.679" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20221207 21:40:05.678" endtime="20221207 21:40:05.692"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="RPA.Browser.Selenium">
+<arg>id:sales-form</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221207 21:40:05.693" endtime="20221207 21:40:08.621"/>
+</kw>
+<status status="PASS" starttime="20221207 21:40:05.569" endtime="20221207 21:40:08.621"/>
+</kw>
+<kw name="Fill and submit the form">
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>firstname</arg>
+<arg>John</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221207 21:40:08.624" level="INFO">Typing text 'John' into text field 'firstname'.</msg>
+<status status="PASS" starttime="20221207 21:40:08.623" endtime="20221207 21:40:08.674"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>lastname</arg>
+<arg>Smith</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221207 21:40:08.676" level="INFO">Typing text 'Smith' into text field 'lastname'.</msg>
+<status status="PASS" starttime="20221207 21:40:08.675" endtime="20221207 21:40:08.723"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>salesresult</arg>
+<arg>123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221207 21:40:08.725" level="INFO">Typing text '123' into text field 'salesresult'.</msg>
+<status status="PASS" starttime="20221207 21:40:08.724" endtime="20221207 21:40:08.772"/>
+</kw>
+<kw name="Select From List By Value" library="RPA.Browser.Selenium">
+<arg>salestarget</arg>
+<arg>10000</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221207 21:40:08.774" level="INFO">Selecting options from selection list 'salestarget' by value 10000.</msg>
+<status status="PASS" starttime="20221207 21:40:08.773" endtime="20221207 21:40:08.819"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser.Selenium">
+<arg>Submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221207 21:40:08.821" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20221207 21:40:08.820" endtime="20221207 21:40:08.902"/>
+</kw>
+<status status="PASS" starttime="20221207 21:40:08.622" endtime="20221207 21:40:08.903"/>
+</kw>
+<status status="PASS" starttime="20221207 21:40:04.069" endtime="20221207 21:40:08.904"/>
+</test>
+<doc>Inserte los datos de ventas de la semana y expórtelos como PDF.</doc>
+<status status="PASS" starttime="20221207 21:40:03.109" endtime="20221207 21:40:08.907"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
