@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.11.0 on win32)" generated="20221208 13:28:42.796" rpa="true" schemaversion="3">
+<suite id="s1" name="Tasks" source="C:\Users\nicoc\Documents\GitHub\RoboCorpsEjemplos\ExampleRobot\tasks.robot">
+<test id="s1-t1" name="Inserte los datos de ventas de la semana y expórtelos como PDF" line="11">
+<kw name="Open the intranet website">
+<kw name="Open Available Browser">
+<arg>https://robotsparebinindustries.com/</arg>
+<msg timestamp="20221208 13:28:42.823" level="FAIL">No keyword with name 'Open Available Browser' found.</msg>
+<status status="FAIL" starttime="20221208 13:28:42.823" endtime="20221208 13:28:42.823"/>
+</kw>
+<status status="FAIL" starttime="20221208 13:28:42.822" endtime="20221208 13:28:42.824"/>
+</kw>
+<kw name="Log in">
+<status status="NOT RUN" starttime="20221208 13:28:42.824" endtime="20221208 13:28:42.824"/>
+</kw>
+<kw name="Download the Excel file">
+<status status="NOT RUN" starttime="20221208 13:28:42.824" endtime="20221208 13:28:42.824"/>
+</kw>
+<kw name="Fill the form using the data from the Excel file">
+<status status="NOT RUN" starttime="20221208 13:28:42.824" endtime="20221208 13:28:42.824"/>
+</kw>
+<kw name="Collect the results">
+<status status="NOT RUN" starttime="20221208 13:28:42.825" endtime="20221208 13:28:42.825"/>
+</kw>
+<kw name="Export the table as a PDF">
+<status status="NOT RUN" starttime="20221208 13:28:42.825" endtime="20221208 13:28:42.825"/>
+</kw>
+<kw name="Log out and close the browser">
+<status status="NOT RUN" starttime="20221208 13:28:42.825" endtime="20221208 13:28:42.825"/>
+</kw>
+<kw name="Close the Browser" type="TEARDOWN">
+<kw name="Close Browser">
+<msg timestamp="20221208 13:28:42.826" level="FAIL">No keyword with name 'Close Browser' found. Did you mean:
+    Close The Browser</msg>
+<status status="FAIL" starttime="20221208 13:28:42.826" endtime="20221208 13:28:42.826"/>
+</kw>
+<status status="FAIL" starttime="20221208 13:28:42.825" endtime="20221208 13:28:42.826">No keyword with name 'Close Browser' found. Did you mean:
+    Close The Browser</status>
+</kw>
+<status status="FAIL" starttime="20221208 13:28:42.822" endtime="20221208 13:28:42.827">No keyword with name 'Open Available Browser' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found. Did you mean:
+    Close The Browser</status>
+</test>
+<doc>Inserte los datos de ventas de la semana y expórtelos como PDF.</doc>
+<status status="FAIL" starttime="20221208 13:28:42.797" endtime="20221208 13:28:42.830"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221208 13:28:42.814" level="ERROR">Error in file 'C:\Users\nicoc\Documents\GitHub\RoboCorpsEjemplos\ExampleRobot\tasks.robot' on line 3: Importing library 'RPA.Browser.Selenium' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Scripts\robot.exe
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Lib\site-packages
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Lib\site-packages\win32
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Lib\site-packages\win32\lib
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Lib\site-packages\Pythonwin</msg>
+<msg timestamp="20221208 13:28:42.817" level="ERROR">Error in file 'C:\Users\nicoc\Documents\GitHub\RoboCorpsEjemplos\ExampleRobot\tasks.robot' on line 4: Importing library 'RPA.HTTP' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Scripts\robot.exe
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Lib\site-packages
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Lib\site-packages\win32
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Lib\site-packages\win32\lib
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Lib\site-packages\Pythonwin</msg>
+<msg timestamp="20221208 13:28:42.818" level="ERROR">Error in file 'C:\Users\nicoc\Documents\GitHub\RoboCorpsEjemplos\ExampleRobot\tasks.robot' on line 5: Importing library 'RPA.Excel.Files' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Scripts\robot.exe
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Lib\site-packages
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Lib\site-packages\win32
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Lib\site-packages\win32\lib
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Lib\site-packages\Pythonwin</msg>
+<msg timestamp="20221208 13:28:42.820" level="ERROR">Error in file 'C:\Users\nicoc\Documents\GitHub\RoboCorpsEjemplos\ExampleRobot\tasks.robot' on line 6: Importing library 'RPA.PDF' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Scripts\robot.exe
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Lib\site-packages
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Lib\site-packages\win32
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Lib\site-packages\win32\lib
+  C:\Users\nicoc\AppData\Local\Programs\Python\Python311\Lib\site-packages\Pythonwin</msg>
+</errors>
+</robot>
